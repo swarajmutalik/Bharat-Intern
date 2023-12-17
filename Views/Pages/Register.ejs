@@ -1,0 +1,41 @@
+<% layout('layouts/boilerplate') %>
+    <style>
+        .custom-border {
+            background-color: white;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+    </head>
+        <div class="container">
+            <h1 class="text-center mb-4 text-dark">Register Form</h1>
+            <div class="col-6 offset-3 custom-border mb-3">
+                <form action="/register" method="POST" class="validated-form" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="username">Username</label>
+                        <input class="form-control" type="text" id="username" name="username" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="email">Email Id</label>
+                        <input class="form-control" type="text" id="email" name="email" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="password">Password</label>
+                        <input class="form-control" type="password" id="password" name="password" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <button class="btn btn-outline-success text-dark">Register</button>
+                </form>
+            </div>
+        </div>
